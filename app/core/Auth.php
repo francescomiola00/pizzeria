@@ -15,7 +15,7 @@ class Auth
             session_set_cookie_params([
                 'lifetime' => SESSION_LIFETIME,
                 'path'     => '/',
-                'secure'   => false,    // true in produzione con HTTPS
+                'secure'   => (APP_ENV === 'production'), // true automatico in produzione
                 'httponly' => true,
                 'samesite' => 'Strict',
             ]);
@@ -141,8 +141,8 @@ class Auth
             die('Richiesta non autorizzata.');
         }
 
-        // Rigenera il token dopo ogni uso
-        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        // Token valido per tutta la sessione - non rigenerare ad ogni uso
+        // per evitare problemi con navigazione multipla e back/forward del browser
     }
 
     /**
