@@ -1,0 +1,14 @@
+/* style.css – placeholder, implementazione completa Fase 3 */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Jost', sans-serif; color: #333; }
+.topbar { background: #1a1a1a; color: #aaa; font-size:.8rem; padding:8px 0; }
+.topbar-inner { max-width:1200px; margin:auto; padding:0 24px; display:flex; gap:24px; flex-wrap:wrap; }
+.navbar { background:#242424; padding:20px 0; position:sticky; top:0; z-index:100; }
+.navbar-inner { max-width:1200px; margin:auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; }
+.navbar-brand { color:#E8820C; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; text-decoration:none; }
+.navbar-menu { list-style:none; display:flex; gap:32px; }
+.navbar-menu a { color:#ccc; text-decoration:none; font-size:.9rem; letter-spacing:.06em; text-transform:uppercase; transition:color .2s; }
+.navbar-menu a:hover { color:#E8820C; }
+.footer { background:#1a1a1a; color:#888; text-align:center; padding:40px 24px; font-size:.85rem; line-height:2; }
+.footer-brand { color:#E8820C; font-family:'Playfair Display',serif; font-size:1.1rem; margin-bottom:8px; }
+.footer-copy { margin-top:8px; font-size:.75rem; color:#555; }
