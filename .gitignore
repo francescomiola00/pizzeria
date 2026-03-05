@@ -1,0 +1,36 @@
+# Configurazione locale (credenziali database)
+config/config.local.php
+
+# File di configurazione server
+httpd.conf
+
+# Dipendenze
+node_modules/
+vendor/
+
+# File di sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Upload files
+public/uploads/products/*
+!public/uploads/products/.gitkeep
+
+# Log files
+*.log
+logs/
+
+# Cache
+.cache/
+*.cache
+
+# Environment
+.env
+.env.local
